@@ -31,7 +31,7 @@ app.use(errorHandler);
 // Database Connection & Sync
 sequelize.sync({ alter: true })
     .then(async () => {
-        console.log('SQLite Database synced');
+        console.log('Database synced successfully');
         
         // Seed initial data
         await seedData();
